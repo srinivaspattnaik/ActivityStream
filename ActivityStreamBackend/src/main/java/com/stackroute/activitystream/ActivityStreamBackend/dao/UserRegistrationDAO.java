@@ -5,4 +5,7 @@ import com.stackroute.activitystream.ActivityStreamBackend.model.UserRegistratio
 public interface UserRegistrationDAO 
 {
 	public boolean addUser(UserRegistration userRegistration);
+	public boolean deleteUser(String loginID);
+	public boolean updateUser(UserRegistration userRegistration);
+	public UserRegistration getUser(String loginID);
 }
